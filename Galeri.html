@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap örnek site</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="sosyal" class="col-7">
+        <a href="#"> <span class="fa fa-facebook"></span> </a>
+        <a href="#"> <span class="fa fa-instagram"></span> </a>
+        <a href="#"> <span class="fa fa-twitter"></span> </a>
+        <a href="#"> <span class="fa fa-twitch"></span> </a>
+        <a href="#"> <span class="fa fa-youtube"></span> </a>
+        <a href="#"> <span class="fa fa-whatsapp"></span> </a>
+      </div>
+      <div id="tel" class="col-5 text-end">
+        <a href="tel:05552321233"><span class="fa fa-phone"></span>0555 232 12 33</a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#giris">
+          Kayıt
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="giris" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Kaydın yok mu? Kayıt ol</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-start">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email Adres</label>
+                    <input type="email" placeholder="Email address" class="form-control" id="exampleInputEmail1"
+                      aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">E-postanızı asla başka biriyle paylaşmayacağız.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Parola</label>
+                    <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                <button type="button" class="btn btn-primary">Kayıt</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand animate__animated animate__pulse" href="#">
+        <img src="images/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fw-bolder" aria-current="page" href="#">Ana Sayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder" href="#">Hakkımızda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bolder" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Şubeler
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Kadıköy</a></li>
+              <li><a class="dropdown-item" href="#">Beşiktaş </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Sarıyer</a></li>
+              <li><a class="dropdown-item" href="#">Gürsel</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder">İletişim</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <footer class="container-fluid bg-dark">
+    <div class="row text-white">
+      <div class="col-4 text-center at-4">
+        <hr class="col-4 mx-auto">
+        <img src="images/logo.png" alt="" style="height: 8%;">
+        <hr class="col-4 mx-auto">
+        <p class="text-center">444-4-444</p>
+        <p class="text-center">Adres 1.satır</p>
+        <p class="text-center">Adres 2.satır</p>
+        <p class="text-center">Şişli İstanbul</p>
+
+      </div>
+
+      <div class="col-4">
+        <hr class="col-4 mx-auto">
+        <h6 class="col-4 mx-auto"> Çalışma Saatleri</h6>
+        <hr class="col-4 mx-auto">
+        <div class="text-center">
+          <p>Hafta içi: 09:00-18:00</p>
+          <p>Hafta içi: 09:00-18:00</p>
+          <p>Pazar: Kapalı</p>
+        </div>
+
+
+      </div>
+      <div class="col-4">
+        <hr class="col-4 mx-auto">
+        <h5 class="col-4 mx-auto"> Servis Bölgeleri</h5>
+        <hr class="col-4 mx-auto">
+        <div class="text-center">
+          <p>Tunceli</p>
+          <p>İstanbul</p>
+          <p>Ankara</p>
+        </div>
+        <div id="footer-alt" class="col-md-12 text-start">
+          <span>
+            Falan filan 2023.Tüm Haklar Saklıdır.
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
